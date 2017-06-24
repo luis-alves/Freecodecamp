@@ -3,11 +3,11 @@
 ![logo](https://thomas-ko.github.io/freecodecamp-redesign/assets/img/logo-footer.svg "FreeCodeCamp logo")
 
 ## Warning
-Please, do not use this as a way of cheeting. You will not learn anything this way!
+Please, do not use this as a way of cheating. You will not learn anything this way!
 
 ## Intro
-In this repo tere are some of the exercises with algorithms, that are proposed
-to anyone attendingthe online course on frontend dev.
+In this repo there are some of the exercises with algorithms that are proposed
+to anyone attending the online course on frontend dev.
 It can be found in this assignment two kinds of files. An `html` and a
 `javascript`. The `html` sole purpose is to provide a template to the running
 of the `javascript` code.
