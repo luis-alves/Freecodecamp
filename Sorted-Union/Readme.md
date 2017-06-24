@@ -1,4 +1,4 @@
-#Sorted Union
+# Sorted Union
 
 Write a function that takes two or more arrays and returns a new array of unique
 values in the order of the original provided arrays.
@@ -9,22 +9,22 @@ original order, but with no duplicates in the final array.
 The unique numbers should be sorted by their original order, but the final array
 should not be sorted in numerical order.
 
-##First considerations
+## First considerations
 
-Just a simple `typeof()` method to show the boolean result. The result must
-check that only `true` and `false` are boolean primites. Although other
-statements can output true or false they are not primitives.
+Create a new array from integers of other arrays so that if the integer is
+already in the new array it is not integrated. The order is the same as they
+appear in the arrays.
 
-##My way of doing it
+## My way of doing it
 
 1. Return the result of the `typeof()` method.
 
-##Methods used
-###typeof()
+## Methods used
+### typeof()
 
 [See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
 
-####Syntax
+#### Syntax
 ```typeof operand```
 
 This method returns a string indicating the type of the `operand`.
