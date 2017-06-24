@@ -1,6 +1,6 @@
 # Freecodecamp
 
-[logo](https://thomas-ko.github.io/freecodecamp-redesign/assets/img/logo-footer.svg "FreeCodeCamp logo")
+![logo](https://thomas-ko.github.io/freecodecamp-redesign/assets/img/logo-footer.svg "FreeCodeCamp logo")
 
 ## Warning
 Please, do not use this as a way of cheeting. You will not learn anything this way!
