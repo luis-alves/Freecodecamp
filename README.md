@@ -21,7 +21,8 @@ The content is divided in three parts:
 2. Intermediate Algorithm Scripting and
 3. Advanced Algorithm Scripting.
 
-At the current date which of these groups have the following tests:
+At the current date each of these groups have the following tests:
+
 **1. Basic Algorithm Scripting**
   * Get Set for our Algorithm Challenges
   * Reverse a String
