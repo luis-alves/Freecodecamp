@@ -30,11 +30,11 @@ function pairElement(str) {
 
 /* Testing */
 
-console.log(pairElement("GCG"));
+console.log(pairElement("GCG") === Array(["G", "C"], ["C","G"], ["G", "C"]) ? 'passed' : 'failed');
 // Expected output: [["G", "C"], ["C","G"],["G", "C"]]
-console.log(pairElement("ATCGA"));
+console.log(pairElement("ATCGA") === [["A","T"], ["T","A"], ["C","G"], ["G","C"], ["A","T"]] ? 'passed' : 'failed');
 // Expected output: [["A","T"],["T","A"],["C","G"],["G","C"],["A","T"]]
-console.log(pairElement("TTGAG"));
+console.log(pairElement("TTGAG") === [["T","A"], ["T","A"], ["G","C"], ["A","T"], ["G","C"]] ? 'passed' : 'failed');
 // Expected output: [["T","A"],["T","A"],["G","C"],["A","T"],["G","C"]]
-console.log(pairElement("CTCTA"));
+console.log(pairElement("CTCTA") === [["C","G"], ["T","A"], ["C","G"], ["T","A"], ["A","T"]] ? 'passed' : 'failed');
 // Expected output: [["C","G"],["T","A"],["C","G"],["T","A"],["A","T"]]

@@ -26,11 +26,11 @@ function fearNotLetter(str) {
 
 // Testing
 
-console.log(fearNotLetter("abce"));
+console.log(fearNotLetter("abce") === 'd' ? 'passed' : 'failed');
 // Expected output: 'd'
-console.log(fearNotLetter("abcdefghjklmno"));
+console.log(fearNotLetter("abcdefghjklmno") === 'i' ? 'passed' : 'failed');
 // Expected output: 'i'
-console.log(fearNotLetter("bcd"));
+console.log(fearNotLetter("bcd") === undefined ? 'passed' : 'failed');
 // Expected output: undefined
-console.log(fearNotLetter("yz"));
+console.log(fearNotLetter("yz") === undefined ? 'passed' : 'failed');
 // Expected output: undefined
