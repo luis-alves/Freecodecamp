@@ -22,7 +22,6 @@ function uniteUnique(arr) {
   // iterate thru the array and concatenat the elements to another array
   function getUniqueArray(acum, num) {
     return acum.concat(Array.isArray(num) ? [acum].indexOf([num]) === -1 ? [num] : [] : acum.indexOf(num) === -1 ? num : []);
-
   }
   var result = completeArray.reduce(getUniqueArray, []);
 

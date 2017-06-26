@@ -17,28 +17,48 @@ appear in the arrays.
 
 ## My way of doing it
 
-1. Return the result of the `typeof()` method.
+1. Retrieve all arguments from the function, using `arguments` key word.
+2. Group all arguments values into a single array so that it is easier to iterate.
+3. Concatenat all values into one single array.
+3.1. Check if the value is an array or integer.
+3.2. Check if there is an index, so that you can know if the value is present.
+3.2.1. Copy only the values that the method `indexOf()` returns '-1'.
 
 ## Methods used
-### typeof()
+### reduce()
 
-[See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
+[See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 
 #### Syntax
-```typeof operand```
+```arr.reduce(callback, [initialValue])```
 
-This method returns a string indicating the type of the `operand`.
+This method reduces all the values into a single one, by applying a function to
+all of them from left to right.
 
 #### Example
 ```
-const x = typeof true;
-const y = typeof 'hello';
-const z = typeof undefined;
+var sum = [0, 1, 2, 3].reduce(function(acc, val) {
+  return acc + val;
+}, 0);
 
-console.log(x);
-console.log(y);
-console.log(z);
+console.log(sum);
 ```
-output 1: *boolean*
-output 2: *string*
-output 3: *undefined*
+output 1: *6*
+
+### concat()
+
+[See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat)
+
+#### Syntax
+```str.concat(string2[, string3, ..., stringN])```
+
+Glues strings together into another string.
+
+#### Example
+```
+var hello = 'Hello, ';
+hello.concat('Kevin', ' have a nice day.');
+
+console.log(hello);
+```
+output 1: *Hello, Kevin have a nice day.*
