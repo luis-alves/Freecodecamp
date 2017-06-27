@@ -44,7 +44,7 @@ output 1: *'hi there!'*
 ```
 // RegExp mode
 const y = 'hello there!';
-x.replace(/\w+/, 'hi');
+y.replace(/\w+/, 'hi');
 
 console.log(y);
 ```
