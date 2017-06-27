@@ -49,10 +49,10 @@ At the current date each of these groups have the following tests:
   * Wherefore art thou
   * Search and Replace
   * Pig Latin
-  * DNA Pairing
-  * Missing letters
-  * Boo who
-  * Sorted Union
+  * [DNA Pairing](https://github.com/luis-alves/Freecodecamp/tree/master/DNA-Pairing)
+  * [Missing letters](https://github.com/luis-alves/Freecodecamp/tree/master/Missing-Letters)
+  * [Boo who](https://github.com/luis-alves/Freecodecamp/tree/master/Boo-who)
+  * [Sorted Union](https://github.com/luis-alves/Freecodecamp/tree/master/Sorted-Union)
   * Convert HTML Entities
   * Spinal Tap Case
   * Sum All Odd Fibonacci Numbers
