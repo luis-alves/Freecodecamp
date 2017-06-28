@@ -1,79 +1,31 @@
-# Spinal Tap Case
+# Sum All Odd Fibonacci Numbers
 
-Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.
+Given a positive integer num, return the sum of all odd Fibonacci numbers that
+are less than or equal to num.
+
+The first two numbers in the Fibonacci sequence are 1 and 1. Every additional
+number in the sequence is the sum of the two previous numbers. The first
+six numbers of the Fibonacci sequence are 1, 1, 2, 3, 5 and 8.
+
+For example, sumFibs(10) should return 10 because all odd Fibonacci numbers
+less than 10 are 1, 1, 3, and 5..
 
 Here are some helpful links:
- * RegExp
- * String.prototype.replace()
+ * Remainder
 
 ## First considerations
 
-Join words with dashes and convert uppercases words into lowercase.
+I must check for each fibonacci number in a sequence so that it does no exceeds
+the number provided in the argument of the function. Also have to check if it
+is odd, and if it is I need to add to a total variable.
 
 ## My way of doing it
 
-1. Divide the replace in two phases.
-1.1. Separate words and lowercase them if they are Uppercases.
-1.1.1. Check if there are uppercase words.
-1.1.2. insert a space and lowercase the char if the anterior char is a letter.
-1.1.3. Lowercase the char if there is a space before the char.
-1.2. Insert dashes between the words if it is a space or underscore.
-1.2.1. Replace the char with dashes.
+1. Write a function that will output the fibonacci sequence.
+2. Write a loop that will increment by 1
+2.1. Check if the fibonacci number as reached the given argument number.
+2.1.1. If true end Loop
+2.1.2. If false check if the value is odd and increment it to a variable.
 
 ## Methods used
-### replace()
-
-[See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
-
-#### Syntax
-```str.replace(regexp|substr, newSubstr|function)```
-
-This method returns a new string with some or all matches of a pattern replaced by a replacement.
-
-#### Example
-```
-// String mode
-const x = 'hello there!';
-x.replace('hello', 'hi');
-
-console.log(x);
-```
-output 1: *'hi there!'*
-
-```
-// RegExp mode
-const y = 'hello there!';
-x.replace(/\w+/, 'hi');
-
-console.log(y);
-```
-output 1: *'hi there!'*
-
-
-### toUpperCase()
-
-[See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
-
-#### Syntax
-```str.toUpperCase()```
-
-This method returns the char(s) to upper case value.
-
-#### Example
-```
-// ex.1
-const x = 'hello there!';
-x.toUpperCase();
-
-console.log(x);
-```
-output 1: *'HELLO THERE!'*
-
-```
-// ex.2
-const y = 'hello there!';
-y[0].toUpperCase();
-
-console.log(y);
-```
-output 1: *'Hello there!'*
+No methods used
