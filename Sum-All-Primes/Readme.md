@@ -34,7 +34,7 @@ are they add up to each other.
 [See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
 
 #### Syntax
-```arr.push([element1[, ...[, elementN]]])```
+`arr.push([element1[, ...[, elementN]]])`
 
 This method is used in array, as a way to insert an new element at the end
 of the array. The opposing method is the `pop()`.

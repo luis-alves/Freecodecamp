@@ -26,7 +26,7 @@ Join words with dashes and convert uppercases words into lowercase.
 [See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 
 #### Syntax
-```str.replace(regexp|substr, newSubstr|function)```
+`str.replace(regexp|substr, newSubstr|function)`
 
 This method returns a new string with some or all matches of a pattern replaced by a replacement.
 
@@ -55,7 +55,7 @@ output 1: *'hi there!'*
 [See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
 
 #### Syntax
-```str.toUpperCase()```
+`str.toUpperCase()`
 
 This method returns the char(s) to upper case value.
 

@@ -25,7 +25,7 @@ Considering the alphabet letters I've to find the missing letters inside a strin
 [See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt)
 
 #### Syntax
-```str.charCodeAt(index)```
+str.charCodeAt(index)`
 
 This method return the UTF-16 code number of the char located at the `index`.
 
@@ -45,7 +45,7 @@ output: *101*
 [See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode)
 
 #### Syntax
-```String.fromCharCode(num1[, ...[, numN]])```
+`String.fromCharCode(num1[, ...[, numN]])`
 
 This method return the char associated with the UTF-16 code `num`.
 

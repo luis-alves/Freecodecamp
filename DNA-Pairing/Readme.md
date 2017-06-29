@@ -36,7 +36,7 @@ contains that pair.
 [See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 
 #### Syntax
-```str.split([separator[, limit]])```
+`str.split([separator[, limit]])`
 
 This String method splits the string the by the `separator` until the `limit` of
 splits is reached.
@@ -75,7 +75,7 @@ output: *['Hello', ' all']*
 [See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
 
 #### Syntax
-```arr.push([element1[, ...[, elementN]]])```
+`arr.push([element1[, ...[, elementN]]])`
 
 This method is used in array, as a way to insert an new element at the end
 of the array. The opposing method is the `pop()`.

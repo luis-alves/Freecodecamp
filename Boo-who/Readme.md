@@ -19,7 +19,7 @@ statements can output true or false they are not primitives.
 [See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
 
 #### Syntax
-```typeof operand```
+`typeof operand`
 
 This method returns a string indicating the type of the `operand`.
 

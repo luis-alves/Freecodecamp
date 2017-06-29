@@ -30,7 +30,7 @@ appear in the arrays.
 [See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 
 #### Syntax
-```arr.reduce(callback, [initialValue])```
+`arr.reduce(callback, [initialValue])`
 
 This method reduces all the values into a single one, by applying a function to
 all of them from left to right.
@@ -50,7 +50,7 @@ output 1: *6*
 [See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat)
 
 #### Syntax
-```str.concat(string2[, string3, ..., stringN])```
+`str.concat(string2[, string3, ..., stringN])`
 
 Glues strings together into another string.
 

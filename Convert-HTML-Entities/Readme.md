@@ -27,7 +27,7 @@ them with their corresponding html code.
 [See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 
 #### Syntax
-```str.replace(regexp|substr, newSubstr|function)```
+`str.replace(regexp|substr, newSubstr|function)`
 
 This method returns a new string with some or all matches of a pattern replaced by a replacement.
 
