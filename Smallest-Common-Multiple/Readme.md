@@ -12,11 +12,28 @@ evenly divisible by all numbers between 1 and 3.
 
 ## First considerations
 
-
+Get the multiple of each number of one given array, and find the lowest
+number that all have.
+like:
+*number 1:* 1, 2, 3, 4, 5
+               ^-------------- lowest common for 1
+*number 2:* 2, 4, 6, 8, 10
+            ^----------------- lowest common for 2
+In this case the smallest common multiple is 2.
 
 ## My way of doing it
 
-1. Create an array that will accommodate all prime numbers.
+1. Check if the value in index 0 of array is lowest or highest than the index 1 value
+1.1. Decompose the given array into a new array with the natural
+     numbers from the lowest to the highest or vice-versa of the previous array.
+2. Loop until its false, incrementing an iterator number by one.
+3. Loop thru each number in the array.
+3.1. Check if the modulus od the iterator by the array number is equal to zero.
+3.1.1. If it is increase count variable by one.
+4. if the value of count is equal to the quantity of integers in the decomposed
+   array.
+4.1. return the iterator number (the answer is given).
+4.2. Increment the iterator number and continue the while loop.
 
 
 ## Methods used
