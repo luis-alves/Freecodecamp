@@ -16,53 +16,34 @@ Here are some helpful links:
 
 ## First considerations
 
-Get the multiple of each number of one given array, and find the lowest
-number that all have.
-like:
-*number 1:* 1, 2, 3, 4, 5
-               ^-------------- lowest common for 1
-*number 2:* 2, 4, 6, 8, 10
-            ^----------------- lowest common for 2
-In this case the smallest common multiple is 2.
+Check every value given in 1st arg if returns true in 2nd arg. If so,
+return a new array from that point until the end.
 
 ## My way of doing it
 
-1. Check if the value in index 0 of array is lowest or highest than the index 1 value
-1.1. Decompose the given array into a new array with the natural
-     numbers from the lowest to the highest or vice-versa of the previous array.
-2. Loop until its false, incrementing an iterator number by one.
-3. Loop thru each number in the array.
-3.1. Check if the modulus od the iterator by the array number is equal to zero.
-3.1.1. If it is increase count variable by one.
-4. if the value of count is equal to the quantity of integers in the decomposed
-   array.
-4.1. return the iterator number (the answer is given).
-4.2. Increment the iterator number and continue the while loop.
+1. Loop through the array of 1st argument.
+1.1. Check if the value returns true in 2nd arg function.
+1.1.1. If its true, return new array from that index to the end.
+2. After the loop ended, return empty array.
 
 
 ## Methods used
-[See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
+### slice()
+[See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
 
 #### Syntax
-`arr.push([element1[, ...[, elementN]]])`
+`arr.slice(begin, end)`
 
-This method is used in array, as a way to insert an new element at the end
-of the array. The opposing method is the `pop()`.
+The slice() method returns a shallow copy of a portion of an array into a new
+array object selected from begin to end (end not included). The original array
+will not be modified.
 
 #### Example
 ```
-const arr = [];
-const a = 'one';
-const a = 'two';
+const arr = ['hello', 'to', 'we'];
 
-const newArr.push(a);
+const newArr = arr.slice(1, 2);
 console.log(newArr);
-
-newArr.push(b);
-console.log(newArr);
-
 
 ```
-output 1: ['a']
-output 2: ['a', 'b']
-                 ^-------- the char is placed at the end of array
+output 1: ['to', 'we']
