@@ -5,15 +5,16 @@ Flatten a nested array. You must account for varying levels of nesting.
 ## First considerations
 
 Pluck each value of an array, if there is a nested array as one of the elements
-it must be copied only the value.
+I must go inside and pluck only the values.
 
 ## My way of doing it
 
-1. Create an empty array.
-2. Loop each element of the given array.
-3.1. Check if it is not an array.
-3.1.1. If it's not push the value to the new array.
-3.1. Else recursively check for this array that is the element.
+1. Create an empty array outside the recursive call so that it does not resets
+   to empty.
+2. Create another empty array that will receive the final answer.
+3. Create a function the will be recursive, and get into the nested arrays.
+4. Call the recursive function.
+5. Output the recursive function returned object.
 
 
 ## Methods used
@@ -35,3 +36,31 @@ console.log(newStr);
 
 ```
 output: *True*
+
+### push()
+
+[See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
+
+#### Syntax
+`arr.push([element1[, ...[, elementN]]])`
+
+This method is used in array, as a way to insert an new element at the end
+of the array. The opposing method is the `pop()`.
+
+#### Example
+```
+const arr = [];
+const a = 'one';
+const a = 'two';
+
+const newArr.push(a);
+console.log(newArr);
+
+newArr.push(b);
+console.log(newArr);
+
+
+```
+output 1: ['a']
+output 2: ['a', 'b']
+                 ^-------- the char is placed at the end of array

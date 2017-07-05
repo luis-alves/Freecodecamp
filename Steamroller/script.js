@@ -3,26 +3,25 @@
   * SteamRoller
   */
 
-var newArray = [];
 function steamrollArray(arr) {
-  // debugger;
-  // I'm a steamroller, baby
-  for (var i = 0; i < arr.length; i++) {
-    // Base case
-    if (!Array.isArray(arr[i])) {
-      newArray.push(arr[i]);
-    } else {
-      // Recursion case
-      steamrollArray(arr[i]);
+  var newArray = [];
+
+  var finalArray = [];
+  finalArray = rollEach(arr);
+
+  function rollEach(arr) {
+    for (var i = 0; i < arr.length; i++) {
+      if (!Array.isArray(arr[i])) {
+        newArray.push(arr[i]);
+      } else {
+        rollEach(arr[i]);
+      }
     }
-
+    return newArray;
   }
-  return newArray;
+
+  return finalArray;
 }
-
-
-
-
 
 
 // Testing
@@ -63,22 +62,18 @@ Object.defineProperty(Array.prototype, "equals", {enumerable: false});
 
 console.log('Tests');
 console.log('');
-
 console.log('My answer is: [' + steamrollArray([1, [2], [3, [[4]]]]) + ']');
 console.log('Correct answer is: [1, 2, 3, 4]');
 steamrollArray([1, [2], [3, [[4]]]]).equals([1, 2, 3, 4]) ? console.log('Passed') : console.log('Failed');
 console.log('---------------------------');
-newArray = [];
 console.log('My answer is: [' + steamrollArray([[["a"]], [["b"]]]) + ']');
 console.log('Correct answer is: ["a", "b"]');
 steamrollArray([[["a"]], [["b"]]]).equals(["a", "b"]) ? console.log('Passed') : console.log('Failed');
 console.log('---------------------------');
-newArray = [];
 console.log('My answer is: [' + steamrollArray([1, [], [3, [[4]]]]) + ']');
 console.log('Correct answer is: [1, 3, 4]');
 steamrollArray([1, [], [3, [[4]]]]).equals([1, 3, 4]) ? console.log('Passed') : console.log('Failed');
 console.log('---------------------------');
-newArray = [];
 console.log('My answer is: [' + steamrollArray([1, {}, [3, [[4]]]]) + ']');
 console.log('Correct answer is: [1, {}, 3, 4]');
 steamrollArray([1, {}, [3, [[4]]]]).equals([1, {}, 3, 4]) ? console.log('Passed') : console.log('Failed');
