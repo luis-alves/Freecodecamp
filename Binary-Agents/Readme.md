@@ -11,38 +11,35 @@ Here are some helpful links:
 
 ## First considerations
 
-Pluck each value of an array, if there is a nested array as one of the elements
-I must go inside and pluck only the values.
+Convert each binary number in string into its correspondent ascii character.
 
 ## My way of doing it
 
-1. Create an empty array outside the recursive call so that it does not resets
-   to empty.
-2. Create another empty array that will receive the final answer.
-3. Create a function the will be recursive, and get into the nested arrays.
-4. Call the recursive function.
-5. Output the recursive function returned object.
+1. Split sting into an array.
+2. Create a function that will convert each binary number into a decimal one.
+3. Call the above function.
+4. Find each character by calling String.fromCharCode().
+5. Create a new string with the characters from previous array.
 
 
 ## Methods used
-### Array.isArray()
+### String.fromCharCode()
 
-[See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)
+[See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode)
 
 #### Syntax
-`Array.isArray(obj)`
+`String.fromCharCode(num1[, ...[, numN]])`
 
-This method determines if the element is an Array object.
+This method  returns a string created by using the specified sequence of Unicode values.
 
 #### Example
 ```
-const str = ["Hello", 'mom'];
+const str = String.fromCharCode(65);
 
-const newStr = Array.isArray(str);
-console.log(newStr);
+console.log(str);
 
 ```
-output: *True*
+output: *"A"*
 
 ### push()
 
