@@ -45,31 +45,3 @@ console.log(newStr);
 
 ```
 output: *True*
-
-### push()
-
-[See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
-
-#### Syntax
-`arr.push([element1[, ...[, elementN]]])`
-
-This method is used in array, as a way to insert an new element at the end
-of the array. The opposing method is the `pop()`.
-
-#### Example
-```
-const arr = [];
-const a = 'one';
-const a = 'two';
-
-const newArr.push(a);
-console.log(newArr);
-
-newArr.push(b);
-console.log(newArr);
-
-
-```
-output 1: ['a']
-output 2: ['a', 'b']
-                 ^-------- the char is placed at the end of array
