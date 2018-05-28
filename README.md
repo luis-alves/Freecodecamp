@@ -6,14 +6,11 @@
 Please, do not use this as a way of cheating. You will not learn anything this way!
 
 ## Intro
-In this repo there are some of the exercises with algorithms that are proposed
-to anyone attending the online course on frontend dev.
-It can be found in this assignment two kinds of files. An `html` and a
-`javascript`. The `html` sole purpose is to provide a template to the running
-of the `javascript` code.
+In this repo you will find exercises related to the FreeCodeCamp online course.
+For each assignment you will find two kinds of files. One `html` and a
+`javascript` file. The `html` sole purpose is to provide a template to inject
+the `javascript` code.
 
-My environment setup is simply a browser windows with devtools to run the javascript;
-Atom IDE to code and I also use `Browser-sync` tool, that is used run a live server.
 
 ## Content
 The content is divided in three parts:
