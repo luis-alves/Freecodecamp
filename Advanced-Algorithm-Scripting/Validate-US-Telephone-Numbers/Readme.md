@@ -20,32 +20,3 @@ For this challenge you will be presented with a string such as `800-692-7753` or
 based on any combination of the formats provided above. The area code is required.
 If the country code is provided, you must confirm that the country code is `1`.
 Return `true` if the string is a valid US phone number; otherwise return `false`.
-
-## First considerations
-
-
-
-## My way of doing it
-
-1.
-
-
-## Methods used
-### Array.isArray()
-
-[See Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)
-
-#### Syntax
-`Array.isArray(obj)`
-
-This method determines if the element is an Array object.
-
-#### Example
-```
-const str = ["Hello", 'mom'];
-
-const newStr = Array.isArray(str);
-console.log(newStr);
-
-```
-output: *True*
