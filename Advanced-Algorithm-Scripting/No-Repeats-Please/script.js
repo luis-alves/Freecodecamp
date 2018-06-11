@@ -1,53 +1,58 @@
 /**
   * FreeCodeCamp Algorithm exercise
   * No Repeats Please
-  */
+  *
+  * Return the number of total permutations of the provided string that don't
+  * have repeated consecutive letters. Assume that all characters in the
+  * provided string are each unique.
+  *
+  * For example, aab should return 2 because it has 6 total permutations
+  * (aab, aab, aba, aba, baa, baa), but only 2 of them (aba and aba)
+  * don't have the same letter (in this case a) repeating.
+  *
+  * */
 
 
-
-function permAlone(str) {
-
-  var arrayString = str.split('');
-  var finalArray = [];
-
-  for (var i = 0; i < arrayString.length; i++) {
-    debugger;
-    var tempArray = JSON.parse(JSON.stringify(arrayString));
-    var charToMove = tempArray.splice(i, 1);
-    var fixedArray = JSON.parse(JSON.stringify(tempArray));
-    for (var j = 0; j < arrayString.length - 1; j++) {
-      tempArray.splice((i+j+1) % arrayString.length, 0, charToMove[0]);
-      var temp = JSON.parse(JSON.stringify(tempArray));
-      tempArray = JSON.parse(JSON.stringify(fixedArray));
-      finalArray.push(temp);
-      // console.log(finalArray);
-    }
+  function removeItemFromArray(item, arrayWithItems) {
+    console.log('____remove Items______');
+    var removedItem = arrayWithItems.splice(item, 1);
+    return arrayWithItems;
   }
 
+function NumberOfPermutationWithoutRepeatingLetters(str) {
 
+  var arrayStr = [];
 
+  for (var a = 0; a < str.length; a++) {
+    arrayStr.push(str[a]);
+  }
+  console.log(arrayStr)
+  // var arrayString = str.split('');
+  var finalArray = [];
+  var result = 0;
+  var count = 0;
+  var resultArray = []
 
-//   for (var i = 0; i < arrayString.length; i++) {
-//     // debugger;
-//     var newTemp = JSON.parse(JSON.stringify(temp));
-//     var charToMove = str.split('').splice(i, 1);
-//     copyArray.splice(0, 1);
-//     for (var j = 0; j < arrayString.length - 1; j++) {
-//       copyArray.splice(j+1, 0, charToMove[0]);
-//       var t = JSON.parse(JSON.stringify(copyArray));
-//       if (copyArray.equals(arrayString)) {
-//         break;
-//       }
-//       finalArray.push(t);
-// debugger;
-//       newTemp.splice(0, 1);
-//       copyArray = newTemp;
-//
-//     }
-//     var temp = JSON.parse(JSON.stringify(finalArray[finalArray.length - 1]));
-//     copyArray = temp;
-//   }
+  if (arrayStr.length === 1) {
+    return 1;
+  }
 
+  for (var i = 0; i < arrayStr.length; i++) {
+    var movingChar = arrayStr[i]
+    var copyArray = arrayStr.slice();
+    var remainingArray = removeItemFromArray(i, copyArray);
+    for (var j = 0; j < remainingArray.length; j++) {
+      var middleArray = []
+      middleArray.push(movingChar[0])
+      for (var k = j; k < remainingArray.length + j; k++) {
+        middleArray.push(remainingArray[k%(remainingArray.length)])
+      }
+      console.log(j + ' ' + middleArray)
+    finalArray.push(middleArray);
+    }
+    console.log(i + ' final ' + finalArray)
+    console.log('_________________')
+  }
 
 
 
@@ -58,11 +63,4 @@ function permAlone(str) {
 
 
 
-
-
-
-
-
-
-
-console.log(permAlone('abc'));
+console.log(NumberOfPermutationWithoutRepeatingLetters('abc'));
