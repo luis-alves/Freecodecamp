@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+/**
+  * FreeCodeCamp Algorithm exercise
+  * Validate US Telephone Numbers
+  */
+
+function telephoneCheck(str) {
+  // Good luck!
+  return true;
+}
+
+
+
+telephoneCheck("555-555-5555");
+=======
 /**
   * FreeCodeCamp Algorithm exercise
   * Record Collection
@@ -103,3 +118,4 @@ console.log('5:');
 updateRecords(2468, "tracks", "Free")[2468]['tracks'].equals(['1999', 'Little Red Corvette', 'Free']) ? console.log('Passed') : console.log('Failed');
 console.log('6:');
 updateRecords(2548, "tracks", "")[2548]['tracks'] === undefined ? console.log('Passed') : console.log('Failed');
+>>>>>>> 04d674b56d9605607518684f966b58a0c72dbcc6
