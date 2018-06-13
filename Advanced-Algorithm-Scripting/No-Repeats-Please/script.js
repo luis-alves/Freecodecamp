@@ -1,4 +1,5 @@
 /**
+<<<<<<< HEAD
   * FreeCodeCamp Algorithm exercise
   * No Repeats Please
   *
@@ -18,11 +19,18 @@
     var removedItem = arrayWithItems.splice(item, 1);
     return arrayWithItems;
   }
+=======
+ * FreeCodeCamp Algorithm exercise
+ * No Repeats Please
+ */
+
+>>>>>>> ddc5068cb7668635117a9e2021efcc7cd4c14e83
 
 function NumberOfPermutationWithoutRepeatingLetters(str) {
 
   var arrayStr = [];
 
+<<<<<<< HEAD
   for (var a = 0; a < str.length; a++) {
     arrayStr.push(str[a]);
   }
@@ -53,7 +61,26 @@ function NumberOfPermutationWithoutRepeatingLetters(str) {
     console.log(i + ' final ' + finalArray)
     console.log('_________________')
   }
+=======
+  let convertedStrToArray = [];
+  let finalArray = [];
 
+  for (let i = 0; i < str.length; i++) {
+    convertedStrToArray.push(str[i]);
+  }
+
+  let copiedOriginalArray = convertedStrToArray.slice();
+
+  for (let i = 0; i < convertedStrToArray.length-2; i++) {
+    copiedOriginalArray.splice(convertedStrToArray.length-2, 2);
+    copiedOriginalArray.push(convertedStrToArray[convertedStrToArray.length-1]);
+    copiedOriginalArray.push(convertedStrToArray[convertedStrToArray.length-2]);
+    finalArray.push(copiedOriginalArray);
+    let tempArray = copiedOriginalArray.slice();
+>>>>>>> ddc5068cb7668635117a9e2021efcc7cd4c14e83
+
+    console.log(tempArray);
+  }
 
 
 
@@ -63,4 +90,15 @@ function NumberOfPermutationWithoutRepeatingLetters(str) {
 
 
 
+<<<<<<< HEAD
 console.log(NumberOfPermutationWithoutRepeatingLetters('abc'));
+=======
+
+
+
+
+
+
+
+console.log(permAlone('abcd'));
+>>>>>>> ddc5068cb7668635117a9e2021efcc7cd4c14e83
