@@ -1,5 +1,4 @@
 /**
-<<<<<<< HEAD
   * FreeCodeCamp Algorithm exercise
   * No Repeats Please
   *
@@ -13,55 +12,8 @@
   *
   * */
 
+function numberOfPermutationWithoutRepeatingLetters (str) {
 
-  function removeItemFromArray(item, arrayWithItems) {
-    console.log('____remove Items______');
-    var removedItem = arrayWithItems.splice(item, 1);
-    return arrayWithItems;
-  }
-=======
- * FreeCodeCamp Algorithm exercise
- * No Repeats Please
- */
-
->>>>>>> ddc5068cb7668635117a9e2021efcc7cd4c14e83
-
-function NumberOfPermutationWithoutRepeatingLetters(str) {
-
-  var arrayStr = [];
-
-<<<<<<< HEAD
-  for (var a = 0; a < str.length; a++) {
-    arrayStr.push(str[a]);
-  }
-  console.log(arrayStr)
-  // var arrayString = str.split('');
-  var finalArray = [];
-  var result = 0;
-  var count = 0;
-  var resultArray = []
-
-  if (arrayStr.length === 1) {
-    return 1;
-  }
-
-  for (var i = 0; i < arrayStr.length; i++) {
-    var movingChar = arrayStr[i]
-    var copyArray = arrayStr.slice();
-    var remainingArray = removeItemFromArray(i, copyArray);
-    for (var j = 0; j < remainingArray.length; j++) {
-      var middleArray = []
-      middleArray.push(movingChar[0])
-      for (var k = j; k < remainingArray.length + j; k++) {
-        middleArray.push(remainingArray[k%(remainingArray.length)])
-      }
-      console.log(j + ' ' + middleArray)
-    finalArray.push(middleArray);
-    }
-    console.log(i + ' final ' + finalArray)
-    console.log('_________________')
-  }
-=======
   let convertedStrToArray = [];
   let finalArray = [];
 
@@ -77,7 +29,6 @@ function NumberOfPermutationWithoutRepeatingLetters(str) {
     copiedOriginalArray.push(convertedStrToArray[convertedStrToArray.length-2]);
     finalArray.push(copiedOriginalArray);
     let tempArray = copiedOriginalArray.slice();
->>>>>>> ddc5068cb7668635117a9e2021efcc7cd4c14e83
 
     console.log(tempArray);
   }
@@ -90,15 +41,4 @@ function NumberOfPermutationWithoutRepeatingLetters(str) {
 
 
 
-<<<<<<< HEAD
-console.log(NumberOfPermutationWithoutRepeatingLetters('abc'));
-=======
-
-
-
-
-
-
-
-console.log(permAlone('abcd'));
->>>>>>> ddc5068cb7668635117a9e2021efcc7cd4c14e83
+console.log(numberOfPermutationWithoutRepeatingLetters('abc'));
